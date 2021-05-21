@@ -19,6 +19,8 @@ class Peca():
     def __init__(self, posicao_x, posicao_y):
         self.posicao_x = posicao_x
         self.posicao_y = posicao_y
+        self.antiga_posicao_x = posicao_x
+        self.antiga_posicao_y = posicao_y
 
 
     def setPosicao(self, posicao_x, posicao_y):
@@ -28,3 +30,6 @@ class Peca():
 
     def getPosicao(self):
         return self.posicao_x, self.posicao_y
+
+    def getPosicaoAntiga(self):
+        return self.antiga_posicao_x, self.antiga_posicao_y
