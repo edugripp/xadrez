@@ -1,0 +1,4 @@
+
+COR_BRANCA = "BRANCA"
+COR_PRETA = "PRETA"
+
