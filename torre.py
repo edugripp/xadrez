@@ -9,4 +9,4 @@ class Torre(peca.Peca):
         posicao_y = 7
         if ordem == 0:
                 posicao_y = 0
-        super.__init__(posicao_x, posicao_y, cor)
+        super().__init__(posicao_x, posicao_y, cor)

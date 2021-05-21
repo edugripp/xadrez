@@ -7,4 +7,4 @@ class Rainha(peca.Peca):
         posicao_y = 3
         if cor is common.COR_BRANCA:
             posicao_x = 7
-        super.__init__(posicao_x, posicao_y, cor)
+        super().__init__(posicao_x, posicao_y, cor)
