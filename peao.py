@@ -7,4 +7,4 @@ class Bispo(peca.Peca):
         if cor is common.COR_BRANCA:
             posicao_x = 6
         posicao_y = ordem
-        super.__init__(posicao_x, posicao_y)
+        super.__init__(posicao_x, posicao_y, cor)

@@ -8,22 +8,27 @@
 #60 61 62 63 64 65 66 67
 #70 71 72 73 74 75 76 77
 
+import  common
 
 class Peca():
+    cor_peca = common.COR_PRETA
     posicao_x = 0
     posicao_y = 0
     antiga_posicao_x = 0
     antiga_posicao_y = 0
 
 
-    def __init__(self, posicao_x, posicao_y):
+    def __init__(self, posicao_x, posicao_y, cor):
         self.posicao_x = posicao_x
         self.posicao_y = posicao_y
         self.antiga_posicao_x = posicao_x
         self.antiga_posicao_y = posicao_y
+        self.cor_peca = cor
 
 
     def setPosicao(self, posicao_x, posicao_y):
+        self.antiga_posicao_x = self.posicao_x
+        self.antiga_posicao_y = self.posicao_y
         self.posicao_x = posicao_x
         self.posicao_y = posicao_y
 
@@ -33,3 +38,7 @@ class Peca():
 
     def getPosicaoAntiga(self):
         return self.antiga_posicao_x, self.antiga_posicao_y
+
+
+    def getCorPeca(self):
+        return self.cor_peca

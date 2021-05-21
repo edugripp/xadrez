@@ -18,7 +18,7 @@ class Tabuleiro():
     def temPeca(self, x, y):
         if self.tabuleiro_completo[x][y] is '':
             return False
-        return True
+        return self.tabuleiro_completo[x][y].getCorPeca()
 
 
 

@@ -9,4 +9,4 @@ class Cavalo(peca.Peca):
         posicao_y = 6
         if ordem == 0:
                 posicao_y = 1
-        super.__init__(posicao_x, posicao_y)
+        super.__init__(posicao_x, posicao_y, cor)

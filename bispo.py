@@ -9,4 +9,4 @@ class Bispo(peca.Peca):
         posicao_y = 5
         if ordem == 0:
                 posicao_y = 2
-        super.__init__(posicao_x, posicao_y)
+        super.__init__(posicao_x, posicao_y, cor)
