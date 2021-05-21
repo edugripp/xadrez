@@ -14,6 +14,6 @@ class Rei(peca.Peca):
         possible_available_positions = []
         for i in range(-1, 2) :
             for j in range(-1, 2) :
-                if self.posicao_x + i > 0 and self.posicao_y + j > 0 and self.posicao_x + i < 7 and self.posicao_y - i < 7:
+                if 0 <= self.posicao_x + i <= 7 and 0 <= self.posicao_y <= 7:
                     possible_available_positions.append([self.posicao_x + i , self.posicao_y + j])
         return possible_available_positions
